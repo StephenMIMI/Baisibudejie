@@ -235,6 +235,9 @@
 		BCBB1B101DE2D9960039FA21 /* tabBar_publish_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB1A3C1DE2D9960039FA21 /* tabBar_publish_icon.png */; };
 		BCBB1B111DE2D9960039FA21 /* tabBar_publish_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB1A3D1DE2D9960039FA21 /* tabBar_publish_icon@2x.png */; };
 		BCBB1B121DE2D9960039FA21 /* tabBar_publish_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB1A3E1DE2D9960039FA21 /* tabBar_publish_icon@3x.png */; };
+		BCBB1B151DE2DDC50039FA21 /* BDJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1B141DE2DDC50039FA21 /* BDJTabBar.m */; };
+		BCBB1B191DE2DF140039FA21 /* UIButton+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1B181DE2DF140039FA21 /* UIButton+Util.m */; };
+		BCBB1B1E1DE2E7ED0039FA21 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1B1D1DE2E7ED0039FA21 /* UIView+Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -499,6 +502,14 @@
 		BCBB1A3C1DE2D9960039FA21 /* tabBar_publish_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_publish_icon.png; sourceTree = "<group>"; };
 		BCBB1A3D1DE2D9960039FA21 /* tabBar_publish_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_publish_icon@2x.png"; sourceTree = "<group>"; };
 		BCBB1A3E1DE2D9960039FA21 /* tabBar_publish_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_publish_icon@3x.png"; sourceTree = "<group>"; };
+		BCBB1B131DE2DDC50039FA21 /* BDJTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJTabBar.h; sourceTree = "<group>"; };
+		BCBB1B141DE2DDC50039FA21 /* BDJTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJTabBar.m; sourceTree = "<group>"; };
+		BCBB1B171DE2DF140039FA21 /* UIButton+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Util.h"; sourceTree = "<group>"; };
+		BCBB1B181DE2DF140039FA21 /* UIButton+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Util.m"; sourceTree = "<group>"; };
+		BCBB1B1A1DE2E1C60039FA21 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BCBB1B1B1DE2E6150039FA21 /* BDJConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDJConst.h; sourceTree = "<group>"; };
+		BCBB1B1C1DE2E7ED0039FA21 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		BCBB1B1D1DE2E7ED0039FA21 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
 		F1601F16B975512C0C5A0709 /* Pods_Baisibudejie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baisibudejie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -614,6 +625,7 @@
 		BCBB19371DE2D4A10039FA21 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BCBB1B161DE2DEB60039FA21 /* Category(类别) */,
 				BCBB19381DE2D4A10039FA21 /* Add */,
 				BCBB193C1DE2D4A10039FA21 /* Attention */,
 				BCBB19401DE2D4A10039FA21 /* Common */,
@@ -697,6 +709,10 @@
 				BCBB194F1DE2D62D0039FA21 /* BaseViewController.m */,
 				BCBB19601DE2D92B0039FA21 /* BDJTabBarController.h */,
 				BCBB19611DE2D92B0039FA21 /* BDJTabBarController.m */,
+				BCBB1B131DE2DDC50039FA21 /* BDJTabBar.h */,
+				BCBB1B141DE2DDC50039FA21 /* BDJTabBar.m */,
+				BCBB1B1A1DE2E1C60039FA21 /* PrefixHeader.pch */,
+				BCBB1B1B1DE2E6150039FA21 /* BDJConst.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1081,6 +1097,17 @@
 				BCBB1A3E1DE2D9960039FA21 /* tabBar_publish_icon@3x.png */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		BCBB1B161DE2DEB60039FA21 /* Category(类别) */ = {
+			isa = PBXGroup;
+			children = (
+				BCBB1B171DE2DF140039FA21 /* UIButton+Util.h */,
+				BCBB1B181DE2DF140039FA21 /* UIButton+Util.m */,
+				BCBB1B1C1DE2E7ED0039FA21 /* UIView+Util.h */,
+				BCBB1B1D1DE2E7ED0039FA21 /* UIView+Util.m */,
+			);
+			path = "Category(类别)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1476,6 +1503,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBB1B151DE2DDC50039FA21 /* BDJTabBar.m in Sources */,
+				BCBB1B1E1DE2E7ED0039FA21 /* UIView+Util.m in Sources */,
+				BCBB1B191DE2DF140039FA21 /* UIButton+Util.m in Sources */,
 				BCBB19531DE2D7D10039FA21 /* AddViewController.m in Sources */,
 				BCBB195F1DE2D8100039FA21 /* ProfileViewController.m in Sources */,
 				BCBB190C1DE2D1C00039FA21 /* ViewController.m in Sources */,
@@ -1628,6 +1658,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Baisibudejie/Classes/Common/PrefixHeader.pch;
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-980681359.Baisibudejie";
@@ -1641,6 +1673,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Baisibudejie/Classes/Common/PrefixHeader.pch;
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-980681359.Baisibudejie";

@@ -7,6 +7,7 @@
 //
 
 #import "BDJTabBarController.h"
+#import "BDJTabBar.h"
 
 @interface BDJTabBarController ()
 
@@ -18,6 +19,10 @@
     [super viewDidLoad];
     //self.tabBar.tintColor = [UIColor colorWithWhite:64.0f/255.0f alpha:1.0f];
     [UITabBar appearance].tintColor = [UIColor colorWithWhite:64.0f/255.0f alpha:1.0f];
+    
+    //使用自定制的tabbar
+    [self setValue:[[BDJTabBar alloc] init] forKey:@"tabBar"];
+    
     //创建视图控制器
     [self createViewControllers];
 }

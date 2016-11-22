@@ -38,7 +38,7 @@
     //遍历系统UITabBarButton的序号
     NSInteger index = 0;
     for (UIView *tmpView in self.subviews) {
-        NSLog(@"%@", tmpView);
+        //NSLog(@"%@", tmpView);
         if ([tmpView isKindOfClass:[UIButton class]]) {
             //tmpView.frame = CGRectMake(btnW*2, 4, btnW, 40);
             tmpView.center = CGPointMake(kScreenWidth/2, 49.0f/2);

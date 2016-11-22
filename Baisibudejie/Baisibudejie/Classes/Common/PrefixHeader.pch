@@ -25,6 +25,7 @@
     #import "UIButton+Util.h"
     #import "UIView+Util.h"
     #import "BDJConst.h"
+    #import "BDJDownloader.h"
 
 #endif
 #endif /* PrefixHeader_pch */

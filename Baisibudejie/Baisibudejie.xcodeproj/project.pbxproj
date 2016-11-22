@@ -238,6 +238,10 @@
 		BCBB1B151DE2DDC50039FA21 /* BDJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1B141DE2DDC50039FA21 /* BDJTabBar.m */; };
 		BCBB1B191DE2DF140039FA21 /* UIButton+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1B181DE2DF140039FA21 /* UIButton+Util.m */; };
 		BCBB1B1E1DE2E7ED0039FA21 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1B1D1DE2E7ED0039FA21 /* UIView+Util.m */; };
+		BCD97F771DE418D50053A8AA /* BDJDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD97F761DE418D50053A8AA /* BDJDownloader.m */; };
+		BCD97F7A1DE41F720053A8AA /* BDJEssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD97F791DE41F720053A8AA /* BDJEssenceModel.m */; };
+		BCD97F7E1DE4346B0053A8AA /* EssenceVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD97F7C1DE4346B0053A8AA /* EssenceVideoCell.m */; };
+		BCD97F7F1DE4346B0053A8AA /* EssenceVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD97F7D1DE4346B0053A8AA /* EssenceVideoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -510,6 +514,13 @@
 		BCBB1B1B1DE2E6150039FA21 /* BDJConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDJConst.h; sourceTree = "<group>"; };
 		BCBB1B1C1DE2E7ED0039FA21 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		BCBB1B1D1DE2E7ED0039FA21 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		BCD97F751DE418D50053A8AA /* BDJDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJDownloader.h; sourceTree = "<group>"; };
+		BCD97F761DE418D50053A8AA /* BDJDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJDownloader.m; sourceTree = "<group>"; };
+		BCD97F781DE41F720053A8AA /* BDJEssenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJEssenceModel.h; sourceTree = "<group>"; };
+		BCD97F791DE41F720053A8AA /* BDJEssenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJEssenceModel.m; sourceTree = "<group>"; };
+		BCD97F7B1DE4346B0053A8AA /* EssenceVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceVideoCell.h; sourceTree = "<group>"; };
+		BCD97F7C1DE4346B0053A8AA /* EssenceVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceVideoCell.m; sourceTree = "<group>"; };
+		BCD97F7D1DE4346B0053A8AA /* EssenceVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceVideoCell.xib; sourceTree = "<group>"; };
 		F1601F16B975512C0C5A0709 /* Pods_Baisibudejie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baisibudejie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -713,6 +724,8 @@
 				BCBB1B141DE2DDC50039FA21 /* BDJTabBar.m */,
 				BCBB1B1A1DE2E1C60039FA21 /* PrefixHeader.pch */,
 				BCBB1B1B1DE2E6150039FA21 /* BDJConst.h */,
+				BCD97F751DE418D50053A8AA /* BDJDownloader.h */,
+				BCD97F761DE418D50053A8AA /* BDJDownloader.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -739,6 +752,8 @@
 		BCBB19431DE2D4A10039FA21 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCD97F781DE41F720053A8AA /* BDJEssenceModel.h */,
+				BCD97F791DE41F720053A8AA /* BDJEssenceModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -746,6 +761,9 @@
 		BCBB19441DE2D4A10039FA21 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BCD97F7B1DE4346B0053A8AA /* EssenceVideoCell.h */,
+				BCD97F7C1DE4346B0053A8AA /* EssenceVideoCell.m */,
+				BCD97F7D1DE4346B0053A8AA /* EssenceVideoCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1314,6 +1332,7 @@
 				BCBB1A611DE2D9960039FA21 /* defaultUserIcon.png in Resources */,
 				BCBB1B011DE2D9960039FA21 /* tabBar_me_click_icon.png in Resources */,
 				BCBB1B031DE2D9960039FA21 /* tabBar_me_click_icon@3x.png in Resources */,
+				BCD97F7F1DE4346B0053A8AA /* EssenceVideoCell.xib in Resources */,
 				BCBB1A401DE2D9960039FA21 /* AppIcon29x29@2x.png in Resources */,
 				BCBB1A761DE2D9960039FA21 /* mainCellShare@2x.png in Resources */,
 				BCBB1AEA1DE2D9960039FA21 /* pushguidebot.png in Resources */,
@@ -1504,13 +1523,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCBB1B151DE2DDC50039FA21 /* BDJTabBar.m in Sources */,
+				BCD97F7A1DE41F720053A8AA /* BDJEssenceModel.m in Sources */,
 				BCBB1B1E1DE2E7ED0039FA21 /* UIView+Util.m in Sources */,
 				BCBB1B191DE2DF140039FA21 /* UIButton+Util.m in Sources */,
 				BCBB19531DE2D7D10039FA21 /* AddViewController.m in Sources */,
 				BCBB195F1DE2D8100039FA21 /* ProfileViewController.m in Sources */,
 				BCBB190C1DE2D1C00039FA21 /* ViewController.m in Sources */,
 				BCBB19501DE2D62D0039FA21 /* BaseViewController.m in Sources */,
+				BCD97F771DE418D50053A8AA /* BDJDownloader.m in Sources */,
 				BCBB195C1DE2D8020039FA21 /* NewsViewController.m in Sources */,
+				BCD97F7E1DE4346B0053A8AA /* EssenceVideoCell.m in Sources */,
 				BCBB19091DE2D1C00039FA21 /* AppDelegate.m in Sources */,
 				BCBB19061DE2D1C00039FA21 /* main.m in Sources */,
 				BCBB19591DE2D7F60039FA21 /* EssenceViewController.m in Sources */,

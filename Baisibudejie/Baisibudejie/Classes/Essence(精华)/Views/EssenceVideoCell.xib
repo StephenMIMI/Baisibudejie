@@ -56,7 +56,7 @@
                                     <action selector="clickMoreBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UYM-q7-NRC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoy-ru-hOt" userLabel="descLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoy-ru-hOt" userLabel="descLabel">
                                 <rect key="frame" x="10" y="54" width="394" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,8 +71,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puG-9w-780" userLabel="commentView">
                                 <rect key="frame" x="10" y="212" width="394" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INW-09-0bE" userLabel="commentLabel">
-                                        <rect key="frame" x="10" y="5" width="374" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INW-09-0bE" userLabel="commentLabel">
+                                        <rect key="frame" x="10" y="5" width="374" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -80,9 +80,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="0iD-uv-V4D"/>
                                     <constraint firstItem="INW-09-0bE" firstAttribute="top" secondItem="puG-9w-780" secondAttribute="top" constant="5" id="84Z-cZ-0Vb"/>
-                                    <constraint firstAttribute="bottom" secondItem="INW-09-0bE" secondAttribute="bottom" constant="5" id="Msh-Uv-OO9"/>
+                                    <constraint firstAttribute="height" constant="60" id="het-Oy-uwK"/>
                                     <constraint firstItem="INW-09-0bE" firstAttribute="leading" secondItem="puG-9w-780" secondAttribute="leading" constant="10" id="z3j-k1-7bf"/>
                                     <constraint firstAttribute="trailing" secondItem="INW-09-0bE" secondAttribute="trailing" constant="10" id="zGq-wD-T2P"/>
                                 </constraints>
@@ -262,8 +261,8 @@
                 <outlet property="caiButton" destination="yZz-nn-7q7" id="acm-66-uEk"/>
                 <outlet property="commentBtn" destination="1uU-wX-AV0" id="ybP-7p-a9D"/>
                 <outlet property="commentLabel" destination="INW-09-0bE" id="YBz-FB-vhV"/>
-                <outlet property="commentViewHCons" destination="0iD-uv-V4D" id="Zp0-wJ-dL9"/>
-                <outlet property="commentViewTopCons" destination="84Z-cZ-0Vb" id="NRc-z9-8Wz"/>
+                <outlet property="commentViewHCons" destination="het-Oy-uwK" id="rY8-Hx-3yf"/>
+                <outlet property="commentViewYCons" destination="Y2g-Aa-Gnu" id="2Om-ed-a92"/>
                 <outlet property="descLabel" destination="Xoy-ru-hOt" id="e2c-vu-3P8"/>
                 <outlet property="dingButton" destination="BG9-DI-uql" id="CW5-cd-qwf"/>
                 <outlet property="imageHCons" destination="clM-aE-XMw" id="PMN-16-SET"/>

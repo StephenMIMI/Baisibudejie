@@ -27,23 +27,27 @@
 
 //图片的高度
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHCons;
-//评论视图的高度
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewHCons;
-//评论视图的top偏移量
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewTopCons;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewYCons;
+
+
+////评论视图的高度
+//@property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewHCons;
+////评论视图的top偏移量
+//@property (weak, nonatomic) IBOutlet NSLayoutConstraint *commentViewTopCons;
 
 @end
 
 @implementation EssenceVideoCell
 
-+ (CGFloat)heightForCell:(BDJEssenceDetail *)detailModel {
-    //图片的宽度/图片的高度 = width/height
-    CGFloat imageHeight = (kScreenWidth-20)*detailModel.video.height.floatValue/detailModel.video.width.floatValue;
-    if (detailModel.top_comments.count > 0) {
-        imageHeight += 70;
-    }
-    return imageHeight+44+30+64+10+20;
-}
+//+ (CGFloat)heightForCell:(BDJEssenceDetail *)detailModel {
+//    //图片的宽度/图片的高度 = width/height
+//    CGFloat imageHeight = (kScreenWidth-20)*detailModel.video.height.floatValue/detailModel.video.width.floatValue;
+//    if (detailModel.top_comments.count > 0) {
+//        imageHeight += 70;
+//    }
+//    return imageHeight+44+30+64+10+20;
+//}
 
 - (void)setDetailModel:(BDJEssenceDetail *)detailModel {
     _detailModel = detailModel;
@@ -81,11 +85,30 @@
     }
     self.playTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", min,sec];
     
+    
+    
     //8.评论文字
     if (detailModel.top_comments.count > 0) {
         BDJEssenceComment *comment = [detailModel.top_comments firstObject];
         self.commentLabel.text = comment.content;
+    }else {
+        self.commentLabel.text = nil;
     }
+    
+    //强制cell布局一次
+    [self layoutIfNeeded];
+    
+    //8.评论文字布局
+    if (detailModel.top_comments.count > 0) {
+        self.commentViewYCons.constant = 10;
+        self.commentViewHCons.constant = self.commentLabel.frame.size.height+10+5;
+    }else {
+        //没有评论的部分
+        self.commentViewHCons.constant = 0;
+        self.commentViewYCons.constant = 0;
+    }
+    
+
     //9.标签
     NSMutableString *tagString = [NSMutableString string];
     for (NSInteger i=0;i<detailModel.tags.count;i++){
@@ -99,6 +122,11 @@
     [self.shareBtn setTitle:detailModel.forward.stringValue forState:UIControlStateNormal];
     [self.dingButton setTitle:detailModel.comment forState:UIControlStateNormal];
     
+    //强制刷新一次
+    [self layoutIfNeeded];
+    //获取cell的高度
+    //基本类型转对象 用@()
+    detailModel.cellHeight = @(CGRectGetMaxY(self.dingButton.frame)+10+10);
 }
 
 + (EssenceVideoCell *)videoCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath withModel:(BDJEssenceDetail *)detailModel {

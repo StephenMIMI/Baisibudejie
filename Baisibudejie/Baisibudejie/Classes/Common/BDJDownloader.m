@@ -21,10 +21,10 @@
     //2.创建request
    
     
-    //设置返回的数据是原始的二进制数据
+    //设置返回的数据是原始的二进制数据,默认是JSON
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    NSURLSessionDataTask *downloadTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+    NSURLSessionDataTask *task = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         if (error) {
             //请求失败
             failBlock(error);
@@ -42,7 +42,7 @@
         }
     }];
     
-    [downloadTask resume];
+    [task resume];
     
 }
 @end

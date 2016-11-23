@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		755477FCE8A79B9A1BDDADCC /* Pods_Baisibudejie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1601F16B975512C0C5A0709 /* Pods_Baisibudejie.framework */; };
+		BC2CEC8A1DE5796E0038DCA1 /* BDJMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2CEC891DE5796E0038DCA1 /* BDJMenu.m */; };
+		BC2CEC8D1DE586560038DCA1 /* BDJMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2CEC8C1DE586560038DCA1 /* BDJMenuViewController.m */; };
+		BC2CEC901DE588930038DCA1 /* BDJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2CEC8F1DE588930038DCA1 /* BDJTableViewController.m */; };
 		BCBB19061DE2D1C00039FA21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB19051DE2D1C00039FA21 /* main.m */; };
 		BCBB19091DE2D1C00039FA21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB19081DE2D1C00039FA21 /* AppDelegate.m */; };
 		BCBB190C1DE2D1C00039FA21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB190B1DE2D1C00039FA21 /* ViewController.m */; };
@@ -264,6 +267,12 @@
 /* Begin PBXFileReference section */
 		2A29F810E8FED9E4A6494F9A /* Pods-Baisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisibudejie/Pods-Baisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
 		3CF704DBBA2673B1D6F59E8C /* Pods-Baisibudejie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisibudejie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baisibudejie/Pods-Baisibudejie.release.xcconfig"; sourceTree = "<group>"; };
+		BC2CEC881DE5796E0038DCA1 /* BDJMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJMenu.h; sourceTree = "<group>"; };
+		BC2CEC891DE5796E0038DCA1 /* BDJMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJMenu.m; sourceTree = "<group>"; };
+		BC2CEC8B1DE586560038DCA1 /* BDJMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJMenuViewController.h; sourceTree = "<group>"; };
+		BC2CEC8C1DE586560038DCA1 /* BDJMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJMenuViewController.m; sourceTree = "<group>"; };
+		BC2CEC8E1DE588930038DCA1 /* BDJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJTableViewController.h; sourceTree = "<group>"; };
+		BC2CEC8F1DE588930038DCA1 /* BDJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJTableViewController.m; sourceTree = "<group>"; };
 		BCBB19011DE2D1C00039FA21 /* Baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBB19051DE2D1C00039FA21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCBB19071DE2D1C00039FA21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -745,6 +754,10 @@
 			children = (
 				BCBB19571DE2D7F60039FA21 /* EssenceViewController.h */,
 				BCBB19581DE2D7F60039FA21 /* EssenceViewController.m */,
+				BC2CEC8B1DE586560038DCA1 /* BDJMenuViewController.h */,
+				BC2CEC8C1DE586560038DCA1 /* BDJMenuViewController.m */,
+				BC2CEC8E1DE588930038DCA1 /* BDJTableViewController.h */,
+				BC2CEC8F1DE588930038DCA1 /* BDJTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -754,6 +767,8 @@
 			children = (
 				BCD97F781DE41F720053A8AA /* BDJEssenceModel.h */,
 				BCD97F791DE41F720053A8AA /* BDJEssenceModel.m */,
+				BC2CEC881DE5796E0038DCA1 /* BDJMenu.h */,
+				BC2CEC891DE5796E0038DCA1 /* BDJMenu.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1526,12 +1541,15 @@
 				BCD97F7A1DE41F720053A8AA /* BDJEssenceModel.m in Sources */,
 				BCBB1B1E1DE2E7ED0039FA21 /* UIView+Util.m in Sources */,
 				BCBB1B191DE2DF140039FA21 /* UIButton+Util.m in Sources */,
+				BC2CEC8D1DE586560038DCA1 /* BDJMenuViewController.m in Sources */,
 				BCBB19531DE2D7D10039FA21 /* AddViewController.m in Sources */,
 				BCBB195F1DE2D8100039FA21 /* ProfileViewController.m in Sources */,
 				BCBB190C1DE2D1C00039FA21 /* ViewController.m in Sources */,
 				BCBB19501DE2D62D0039FA21 /* BaseViewController.m in Sources */,
+				BC2CEC901DE588930038DCA1 /* BDJTableViewController.m in Sources */,
 				BCD97F771DE418D50053A8AA /* BDJDownloader.m in Sources */,
 				BCBB195C1DE2D8020039FA21 /* NewsViewController.m in Sources */,
+				BC2CEC8A1DE5796E0038DCA1 /* BDJMenu.m in Sources */,
 				BCD97F7E1DE4346B0053A8AA /* EssenceVideoCell.m in Sources */,
 				BCBB19091DE2D1C00039FA21 /* AppDelegate.m in Sources */,
 				BCBB19061DE2D1C00039FA21 /* main.m in Sources */,

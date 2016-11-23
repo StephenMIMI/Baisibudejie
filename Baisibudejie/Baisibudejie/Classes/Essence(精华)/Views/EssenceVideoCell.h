@@ -17,6 +17,6 @@
 //创建cell的类方法
 + (EssenceVideoCell *)videoCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath withModel:(BDJEssenceDetail *)detailModel;
 
-+ (CGFloat)heightForCell:(BDJEssenceDetail *)detailModel;
+//+ (CGFloat)heightForCell:(BDJEssenceDetail *)detailModel;
 
 @end

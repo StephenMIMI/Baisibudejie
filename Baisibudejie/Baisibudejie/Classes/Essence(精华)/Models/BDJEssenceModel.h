@@ -53,6 +53,8 @@
 @property (nonatomic, copy)NSString<Optional> *up;
 @property (nonatomic, strong)BDJEssenceVideo<Optional> *video;
 
+//用来设置和获取对应cell的高度
+@property (nonatomic, strong)NSNumber<Optional> *cellHeight;
 @end
 
 @interface BDJEssenceTag : JSONModel

@@ -21,6 +21,7 @@
     #import <Masonry/Masonry.h>
     #import <MJRefresh/MJRefresh.h>
     #import <SDWebImage/UIImageView+WebCache.h>
+    #import <ProgressHUD/ProgressHUD.h>
     //3.自己写的头文件
     #import "UIButton+Util.h"
     #import "UIView+Util.h"

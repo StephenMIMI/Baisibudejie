@@ -9,13 +9,18 @@
 #import "BDJMenuViewController.h"
 #import "BDJTableViewController.h"
 #import "BDJMenu.h"
+#import "BDJMenuView.h"
 
-@interface BDJMenuViewController ()<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+@interface BDJMenuViewController ()<UIPageViewControllerDelegate,UIPageViewControllerDataSource, BDJMenuViewDelegate>
 //视图控制器数组
 @property (nonatomic, strong)NSMutableArray *ctrlArray;
 //分页视图控制器
 @property (nonatomic, strong)UIPageViewController *pageCtrl;
 
+//当前显示的视图控制器的序号
+@property (nonatomic, assign)NSInteger curPageIndex;
+//菜单视图
+@property (nonatomic, strong)BDJMenuView *menuView;
 @end
 
 @implementation BDJMenuViewController
@@ -39,6 +44,23 @@
     }
     //创建分页控制器
     [self createPageCtrl];
+    //创建导航
+    [self createMenu];
+}
+
+//创建导航
+- (void)createMenu {
+    BDJMenuView *menuView = [[BDJMenuView alloc] initWithItems:self.subMenus rightIcon:self.rightImageName rightSelectIcon:self.rightHLImageName];
+    self.menuView = menuView;
+    self.navigationItem.titleView = menuView;
+    //设置代理
+    menuView.delegate = self;
+    //约束
+    [menuView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.navigationController.view);
+        make.top.equalTo(self.navigationController.view).offset(20);
+        make.height.mas_equalTo(44);
+    }];
 }
 
 //创建分页控制器
@@ -68,7 +90,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma UIPageViewController的代理
+#pragma mark - UIPageViewController的代理
 //返回向后滑动时显示的视图控制器
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     //1.当前的序号
@@ -90,6 +112,31 @@
     }else {
         return self.ctrlArray[curIndex-1];
     }
+}
+
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers {
+    
+    //获取序号
+    UIViewController *lastCtrl = [pendingViewControllers lastObject];
+    NSInteger index = [self.ctrlArray indexOfObject:lastCtrl];
+    self.curPageIndex = index;
+    self.menuView.selectIndex = self.curPageIndex;
+}
+
+#pragma mark - BDJMenuView的代理
+- (void)menuView:(BDJMenuView *)menuView didClickBtnAtIndex:(NSInteger)index {
+    //获取视图控制器
+    UIViewController *vc = self.ctrlArray[index];
+    UIPageViewControllerNavigationDirection dir = UIPageViewControllerNavigationDirectionForward;
+    if (index < self.curPageIndex) {
+        dir = UIPageViewControllerNavigationDirectionReverse;
+    }
+    self.curPageIndex = index;
+    [self.pageCtrl setViewControllers:@[vc] direction:dir animated:YES completion:nil];
+}
+
+- (void)menuView:(BDJMenuView *)menuView didClickRightBtn:(MenuType)type {
+    NSLog(@"点击了右边的按钮");
 }
 
 @end

@@ -25,6 +25,7 @@
     //3.自己写的头文件
     #import "UIButton+Util.h"
     #import "UIView+Util.h"
+    #import "UILabel+Util.h"
     #import "BDJConst.h"
     #import "BDJDownloader.h"
 

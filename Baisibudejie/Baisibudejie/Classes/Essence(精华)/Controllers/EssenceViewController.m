@@ -15,9 +15,12 @@
 
 @implementation EssenceViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.rightImageName = @"navigationButtonRandomN_26x26_";
+    self.rightHLImageName = @"navigationButtonRandomClick_26x26_";
 }
 
 - (void)didReceiveMemoryWarning {

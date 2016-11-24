@@ -28,6 +28,7 @@
     [self createViewControllers];
     //获取菜单数据，本地没有再去请求
     [self loadMenuData];
+    self.view.backgroundColor = [UIColor whiteColor];
     
 }
 

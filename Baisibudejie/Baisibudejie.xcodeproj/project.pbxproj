@@ -245,6 +245,16 @@
 		BCD97F7A1DE41F720053A8AA /* BDJEssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD97F791DE41F720053A8AA /* BDJEssenceModel.m */; };
 		BCD97F7E1DE4346B0053A8AA /* EssenceVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD97F7C1DE4346B0053A8AA /* EssenceVideoCell.m */; };
 		BCD97F7F1DE4346B0053A8AA /* EssenceVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD97F7D1DE4346B0053A8AA /* EssenceVideoCell.xib */; };
+		BCFB871D1DE6BADF003340A2 /* BDJMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFB871C1DE6BADF003340A2 /* BDJMenuView.m */; };
+		BCFB87201DE6BF63003340A2 /* UILabel+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFB871F1DE6BF63003340A2 /* UILabel+Util.m */; };
+		BCFB87691DE6CA1F003340A2 /* navigationButtonRandom_26x26_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87611DE6CA1F003340A2 /* navigationButtonRandom_26x26_@1x.png */; };
+		BCFB876A1DE6CA1F003340A2 /* navigationButtonRandom_26x26_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87621DE6CA1F003340A2 /* navigationButtonRandom_26x26_@2x.png */; };
+		BCFB876B1DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87631DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@1x.png */; };
+		BCFB876C1DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87641DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@2x.png */; };
+		BCFB876D1DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87651DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@1x.png */; };
+		BCFB876E1DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87661DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@2x.png */; };
+		BCFB876F1DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87671DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@1x.png */; };
+		BCFB87701DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFB87681DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -530,6 +540,18 @@
 		BCD97F7B1DE4346B0053A8AA /* EssenceVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceVideoCell.h; sourceTree = "<group>"; };
 		BCD97F7C1DE4346B0053A8AA /* EssenceVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceVideoCell.m; sourceTree = "<group>"; };
 		BCD97F7D1DE4346B0053A8AA /* EssenceVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceVideoCell.xib; sourceTree = "<group>"; };
+		BCFB871B1DE6BADF003340A2 /* BDJMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJMenuView.h; sourceTree = "<group>"; };
+		BCFB871C1DE6BADF003340A2 /* BDJMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJMenuView.m; sourceTree = "<group>"; };
+		BCFB871E1DE6BF63003340A2 /* UILabel+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Util.h"; sourceTree = "<group>"; };
+		BCFB871F1DE6BF63003340A2 /* UILabel+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Util.m"; sourceTree = "<group>"; };
+		BCFB87611DE6CA1F003340A2 /* navigationButtonRandom_26x26_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandom_26x26_@1x.png"; sourceTree = "<group>"; };
+		BCFB87621DE6CA1F003340A2 /* navigationButtonRandom_26x26_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandom_26x26_@2x.png"; sourceTree = "<group>"; };
+		BCFB87631DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomClick_26x26_@1x.png"; sourceTree = "<group>"; };
+		BCFB87641DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomClick_26x26_@2x.png"; sourceTree = "<group>"; };
+		BCFB87651DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomClickN_26x26_@1x.png"; sourceTree = "<group>"; };
+		BCFB87661DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomClickN_26x26_@2x.png"; sourceTree = "<group>"; };
+		BCFB87671DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomN_26x26_@1x.png"; sourceTree = "<group>"; };
+		BCFB87681DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonRandomN_26x26_@2x.png"; sourceTree = "<group>"; };
 		F1601F16B975512C0C5A0709 /* Pods_Baisibudejie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baisibudejie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -735,6 +757,8 @@
 				BCBB1B1B1DE2E6150039FA21 /* BDJConst.h */,
 				BCD97F751DE418D50053A8AA /* BDJDownloader.h */,
 				BCD97F761DE418D50053A8AA /* BDJDownloader.m */,
+				BCFB871B1DE6BADF003340A2 /* BDJMenuView.h */,
+				BCFB871C1DE6BADF003340A2 /* BDJMenuView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -893,6 +917,14 @@
 		BCBB19771DE2D9960039FA21 /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				BCFB87611DE6CA1F003340A2 /* navigationButtonRandom_26x26_@1x.png */,
+				BCFB87621DE6CA1F003340A2 /* navigationButtonRandom_26x26_@2x.png */,
+				BCFB87631DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@1x.png */,
+				BCFB87641DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@2x.png */,
+				BCFB87651DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@1x.png */,
+				BCFB87661DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@2x.png */,
+				BCFB87671DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@1x.png */,
+				BCFB87681DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@2x.png */,
 				BCBB19781DE2D9960039FA21 /* cell-button-line.png */,
 				BCBB19791DE2D9960039FA21 /* cell-button-line@2x.png */,
 				BCBB197A1DE2D9960039FA21 /* cell-content-line.png */,
@@ -1139,6 +1171,8 @@
 				BCBB1B181DE2DF140039FA21 /* UIButton+Util.m */,
 				BCBB1B1C1DE2E7ED0039FA21 /* UIView+Util.h */,
 				BCBB1B1D1DE2E7ED0039FA21 /* UIView+Util.m */,
+				BCFB871E1DE6BF63003340A2 /* UILabel+Util.h */,
+				BCFB871F1DE6BF63003340A2 /* UILabel+Util.m */,
 			);
 			path = "Category(类别)";
 			sourceTree = "<group>";
@@ -1249,6 +1283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFB876F1DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@1x.png in Resources */,
 				BCBB1A581DE2D9960039FA21 /* cellFollowClickIcon@3x.png in Resources */,
 				BCBB1A511DE2D9960039FA21 /* AppIcon76x76~ipad.png in Resources */,
 				BCBB1ADD1DE2D9960039FA21 /* publish-picture.png in Resources */,
@@ -1268,6 +1303,7 @@
 				BCBB1A4E1DE2D9960039FA21 /* AppIcon72x72@2x~ipad.png in Resources */,
 				BCBB1A901DE2D9960039FA21 /* tagicon.png in Resources */,
 				BCBB1B111DE2D9960039FA21 /* tabBar_publish_icon@2x.png in Resources */,
+				BCFB876D1DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@1x.png in Resources */,
 				BCBB1AD91DE2D9960039FA21 /* publish-audio@3x.png in Resources */,
 				BCBB1AD51DE2D9960039FA21 /* app_slogan@2x.png in Resources */,
 				BCBB1A6C1DE2D9960039FA21 /* mainCellCaiClick@2x.png in Resources */,
@@ -1285,6 +1321,7 @@
 				BCBB1AA41DE2D9960039FA21 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				BCBB1ABD1DE2D9960039FA21 /* mine-setting-icon-click@3x.png in Resources */,
 				BCBB1AED1DE2D9960039FA21 /* pushguidemid.png in Resources */,
+				BCFB87691DE6CA1F003340A2 /* navigationButtonRandom_26x26_@1x.png in Resources */,
 				BCBB1ADB1DE2D9960039FA21 /* publish-offline@2x.png in Resources */,
 				BCBB1A981DE2D9960039FA21 /* FollowBtnClickBg.png in Resources */,
 				BCBB1AE91DE2D9960039FA21 /* pushguidebg.png in Resources */,
@@ -1297,6 +1334,7 @@
 				BCBB1AB61DE2D9960039FA21 /* mine-moon-icon-click.png in Resources */,
 				BCBB1AA21DE2D9960039FA21 /* LaunchImage-700@2x.png in Resources */,
 				BCBB1A441DE2D9960039FA21 /* AppIcon40x40@2x.png in Resources */,
+				BCFB876E1DE6CA1F003340A2 /* navigationButtonRandomClickN_26x26_@2x.png in Resources */,
 				BCBB1AAB1DE2D9960039FA21 /* friendsRecommentIcon@2x.png in Resources */,
 				BCBB1AF51DE2D9960039FA21 /* tabBar_essence_click_icon.png in Resources */,
 				BCBB1A811DE2D9960039FA21 /* playButtonPause@3x.png in Resources */,
@@ -1331,6 +1369,7 @@
 				BCBB1B081DE2D9960039FA21 /* tabBar_new_click_icon@2x.png in Resources */,
 				BCBB1A8D1DE2D9960039FA21 /* see-big-picture.png in Resources */,
 				BCBB1AB51DE2D9960039FA21 /* MainTitle@3x.png in Resources */,
+				BCFB876C1DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@2x.png in Resources */,
 				BCBB1AD31DE2D9960039FA21 /* navigationButtonReturnClick@3x.png in Resources */,
 				BCBB1A561DE2D9960039FA21 /* cellFollowClickIcon.png in Resources */,
 				BCBB1B0A1DE2D9960039FA21 /* tabBar_new_icon.png in Resources */,
@@ -1343,6 +1382,7 @@
 				BCBB1A461DE2D9960039FA21 /* AppIcon40x40@3x.png in Resources */,
 				BCBB1A841DE2D9960039FA21 /* playButtonPlay@3x.png in Resources */,
 				BCBB1A741DE2D9960039FA21 /* mainCellDingClick@2x.png in Resources */,
+				BCFB87701DE6CA1F003340A2 /* navigationButtonRandomN_26x26_@2x.png in Resources */,
 				BCBB1A4D1DE2D9960039FA21 /* AppIcon60x60@3x.png in Resources */,
 				BCBB1A611DE2D9960039FA21 /* defaultUserIcon.png in Resources */,
 				BCBB1B011DE2D9960039FA21 /* tabBar_me_click_icon.png in Resources */,
@@ -1401,6 +1441,7 @@
 				BCBB1A621DE2D9960039FA21 /* defaultUserIcon@2x.png in Resources */,
 				BCBB1AD61DE2D9960039FA21 /* app_slogan@3x.png in Resources */,
 				BCBB1B0C1DE2D9960039FA21 /* tabBar_new_icon@3x.png in Resources */,
+				BCFB876B1DE6CA1F003340A2 /* navigationButtonRandomClick_26x26_@1x.png in Resources */,
 				BCBB1AC21DE2D9960039FA21 /* mine-sun-icon-click@2x.png in Resources */,
 				BCBB1A541DE2D9960039FA21 /* cell-content-line.png in Resources */,
 				BCBB1A691DE2D9960039FA21 /* mainCellCai.png in Resources */,
@@ -1424,6 +1465,7 @@
 				BCBB1AFF1DE2D9960039FA21 /* tabBar_friendTrends_icon@2x.png in Resources */,
 				BCBB1A911DE2D9960039FA21 /* tagicon@2x.png in Resources */,
 				BCBB1A751DE2D9960039FA21 /* mainCellShare.png in Resources */,
+				BCFB876A1DE6CA1F003340A2 /* navigationButtonRandom_26x26_@2x.png in Resources */,
 				BCBB1AE51DE2D9960039FA21 /* publish-text@3x.png in Resources */,
 				BCBB1AB71DE2D9960039FA21 /* mine-moon-icon-click@2x.png in Resources */,
 				BCBB1AA01DE2D9960039FA21 /* LaunchImage-568h@2x.png in Resources */,
@@ -1545,6 +1587,8 @@
 				BCBB19531DE2D7D10039FA21 /* AddViewController.m in Sources */,
 				BCBB195F1DE2D8100039FA21 /* ProfileViewController.m in Sources */,
 				BCBB190C1DE2D1C00039FA21 /* ViewController.m in Sources */,
+				BCFB87201DE6BF63003340A2 /* UILabel+Util.m in Sources */,
+				BCFB871D1DE6BADF003340A2 /* BDJMenuView.m in Sources */,
 				BCBB19501DE2D62D0039FA21 /* BaseViewController.m in Sources */,
 				BC2CEC901DE588930038DCA1 /* BDJTableViewController.m in Sources */,
 				BCD97F771DE418D50053A8AA /* BDJDownloader.m in Sources */,
@@ -1637,6 +1681,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Baisibudejie/Classes/Common/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1679,6 +1725,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Baisibudejie/Classes/Common/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

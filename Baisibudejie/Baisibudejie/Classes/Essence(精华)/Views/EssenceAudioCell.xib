@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCellId" id="KGk-i7-Jjw" customClass="EssenceVideoCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="audioCellId" id="KGk-i7-Jjw" customClass="EssenceAudioCell">
             <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -62,7 +62,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-Xe-VBg" userLabel="videoImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-Xe-VBg" userLabel="audioImageView">
                                 <rect key="frame" x="10" y="82" width="394" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="clM-aE-XMw"/>
@@ -171,12 +171,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdB-Lq-e8o" userLabel="playButton">
-                                <rect key="frame" x="182" y="117" width="50" height="50"/>
+                                <rect key="frame" x="187" y="168" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Kpd-Ah-Qzk"/>
-                                    <constraint firstAttribute="width" constant="50" id="dW2-Nv-TU7"/>
+                                    <constraint firstAttribute="height" constant="40" id="Kpd-Ah-Qzk"/>
+                                    <constraint firstAttribute="width" constant="40" id="dW2-Nv-TU7"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="video-play.png"/>
+                                <state key="normal" image="playButtonPlay.png"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="playAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VbO-I5-I0B"/>
                                 </connections>
@@ -230,6 +237,7 @@
                             <constraint firstAttribute="trailing" secondItem="puG-9w-780" secondAttribute="trailing" constant="10" id="Q9L-pR-YXw"/>
                             <constraint firstAttribute="trailing" secondItem="4Fh-Xe-VBg" secondAttribute="trailing" constant="10" id="T3T-8Y-44g"/>
                             <constraint firstItem="MdB-Lq-e8o" firstAttribute="centerX" secondItem="4Fh-Xe-VBg" secondAttribute="centerX" id="TEZ-ra-dZT"/>
+                            <constraint firstItem="puG-9w-780" firstAttribute="top" secondItem="MdB-Lq-e8o" secondAttribute="bottom" constant="4" id="TcY-lx-bxO"/>
                             <constraint firstItem="xEO-DT-dLP" firstAttribute="top" secondItem="puG-9w-780" secondAttribute="bottom" constant="5" id="UBc-KU-yza"/>
                             <constraint firstItem="1uU-wX-AV0" firstAttribute="top" secondItem="xEO-DT-dLP" secondAttribute="bottom" constant="10" id="WfV-f6-nHZ"/>
                             <constraint firstItem="BG9-DI-uql" firstAttribute="top" secondItem="xEO-DT-dLP" secondAttribute="bottom" constant="10" id="XFo-g6-8aV"/>
@@ -247,6 +255,11 @@
                             <constraint firstItem="mJc-Ih-bl9" firstAttribute="leading" secondItem="yZz-nn-7q7" secondAttribute="trailing" id="wCs-5h-rBn"/>
                             <constraint firstItem="Cmw-dt-EJl" firstAttribute="leading" secondItem="Raa-h4-ahc" secondAttribute="trailing" constant="20" id="yKh-9n-gHw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gGw-FA-k1L"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -258,6 +271,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="audioImageView" destination="4Fh-Xe-VBg" id="3N4-l6-MvR"/>
                 <outlet property="caiButton" destination="yZz-nn-7q7" id="acm-66-uEk"/>
                 <outlet property="commentBtn" destination="1uU-wX-AV0" id="ybP-7p-a9D"/>
                 <outlet property="commentLabel" destination="INW-09-0bE" id="YBz-FB-vhV"/>
@@ -273,7 +287,6 @@
                 <outlet property="tagLabel" destination="Bri-YZ-2sJ" id="3X4-pK-feV"/>
                 <outlet property="userImageView" destination="Raa-h4-ahc" id="hep-js-phM"/>
                 <outlet property="userNameLabel" destination="Cmw-dt-EJl" id="cF7-uM-7iW"/>
-                <outlet property="videoImageView" destination="4Fh-Xe-VBg" id="3sS-Vq-GOc"/>
             </connections>
         </tableViewCell>
     </objects>
@@ -286,7 +299,7 @@
         <image name="mainCellDingClick.png" width="20" height="20"/>
         <image name="mainCellShare.png" width="20" height="20"/>
         <image name="mainCellShareClick.png" width="23" height="23"/>
+        <image name="playButtonPlay.png" width="30" height="30"/>
         <image name="tagicon.png" width="15" height="15"/>
-        <image name="video-play.png" width="71" height="71"/>
     </resources>
 </document>

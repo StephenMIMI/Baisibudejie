@@ -1,15 +1,15 @@
 //
-//  EssenceVideoCell.m
+//  EssenceAudioCell.m
 //  Baisibudejie
 //
 //  Created by qianfeng on 16/11/22.
 //  Copyright © 2016年 zhb. All rights reserved.
 //
 
-#import "EssenceVideoCell.h"
+#import "EssenceAudioCell.h"
 #import "BDJEssenceModel.h"
 
-@interface EssenceVideoCell()
+@interface EssenceAudioCell()
 
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
@@ -23,7 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *caiButton;
 @property (weak, nonatomic) IBOutlet UIButton *shareBtn;
 @property (weak, nonatomic) IBOutlet UIButton *commentBtn;
-@property (weak, nonatomic) IBOutlet UIImageView *videoImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *audioImageView;
 
 //图片的高度
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHCons;
@@ -38,7 +38,7 @@
 
 @end
 
-@implementation EssenceVideoCell
+@implementation EssenceAudioCell
 
 //+ (CGFloat)heightForCell:(BDJEssenceDetail *)detailModel {
 //    //图片的宽度/图片的高度 = width/height
@@ -66,19 +66,19 @@
     //4.描述文字
     self.descLabel.text = detailModel.text;
     //5.图片
-    NSString *videoString = [detailModel.video.thumbnail firstObject];
-    NSURL *videoUrl = [NSURL URLWithString:videoString];
-    [self.videoImageView sd_setImageWithURL:videoUrl placeholderImage:[UIImage imageNamed:@"post_placeholderImage"]];
+    NSString *audioString = [detailModel.audio.thumbnail firstObject];
+    NSURL *audioUrl = [NSURL URLWithString:audioString];
+    [self.audioImageView sd_setImageWithURL:audioUrl placeholderImage:[UIImage imageNamed:@"post_placeholderImage"]];
     //修改高度
     //图片的宽度/图片的高度 = width/height
-    CGFloat imageHeight = (kScreenWidth-20)*detailModel.video.height.floatValue/detailModel.video.width.floatValue;
+    CGFloat imageHeight = (kScreenWidth-20)*detailModel.audio.height.floatValue/detailModel.audio.width.floatValue;
     self.imageHCons.constant = imageHeight;
     
     //6.播放次数
-    self.playNumLabel.text = [NSString stringWithFormat:@"%@ 播放", detailModel.video.playcount];
+    self.playNumLabel.text = [NSString stringWithFormat:@"%@ 播放", detailModel.audio.playcount];
     //7.视频时间
     NSInteger min = 0;
-    NSInteger sec = [detailModel.video.duration integerValue];
+    NSInteger sec = [detailModel.audio.duration integerValue];
     if (sec >= 60) {
         min = sec/60;
         sec = sec%60;
@@ -129,12 +129,12 @@
     detailModel.cellHeight = @(CGRectGetMaxY(self.dingButton.frame)+10+10);
 }
 
-+ (EssenceVideoCell *)videoCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath withModel:(BDJEssenceDetail *)detailModel {
++ (EssenceAudioCell *)audioCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath withModel:(BDJEssenceDetail *)detailModel {
     
-    static NSString *cellId = @"videoCellId";
-    EssenceVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    static NSString *cellId = @"audioCellId";
+    EssenceAudioCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (nil == cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"EssenceVideoCell" owner:nil options:nil] lastObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"EssenceAudioCell" owner:nil options:nil] lastObject];
     }
     //数据
     cell.detailModel = detailModel;

@@ -11,6 +11,8 @@
 @class BDJEssenceInfo;
 @class BDJEssenceUser;
 @class BDJEssenceVideo;
+@class BDJEssenceImage;
+@class BDJEssenceAudio;
 
 @protocol BDJEssenceDetail;
 @protocol BDJEssenceTag;
@@ -51,10 +53,39 @@
 
 @property (nonatomic, strong)BDJEssenceUser<Optional> *u;
 @property (nonatomic, copy)NSString<Optional> *up;
+//视频的数据
 @property (nonatomic, strong)BDJEssenceVideo<Optional> *video;
+//图片的数据
+@property (nonatomic, strong)BDJEssenceImage<Optional> *image;
+//声音的数据
+@property (nonatomic, strong)BDJEssenceAudio<Optional> *audio;
 
 //用来设置和获取对应cell的高度
 @property (nonatomic, strong)NSNumber<Optional> *cellHeight;
+@end
+
+@interface BDJEssenceAudio : JSONModel
+@property (nonatomic, strong)NSNumber<Optional> *duration;
+@property (nonatomic, copy)NSArray<Optional, NSString> *download_url;
+@property (nonatomic, strong)NSNumber<Optional> *height;
+@property (nonatomic, strong)NSNumber<Optional> *width;
+@property (nonatomic, strong)NSNumber<Optional> *playcount;
+@property (nonatomic, strong)NSNumber<Optional> *playfcount;
+
+@property (nonatomic, copy)NSArray<Optional, NSString> *audio;
+@property (nonatomic, copy)NSArray<Optional, NSString> *thumbnail;
+@property (nonatomic, copy)NSArray<Optional, NSString> *thumbnail_small;
+@end
+
+@interface BDJEssenceImage : JSONModel
+
+@property (nonatomic, strong)NSArray<Optional, NSString> *big;
+@property (nonatomic, strong)NSArray<Optional, NSString> *download_url;
+@property (nonatomic, strong)NSNumber<Optional> *height;
+@property (nonatomic, strong)NSArray<Optional, NSString> *medium;
+@property (nonatomic, strong)NSArray<Optional, NSString> *small;
+@property (nonatomic, strong)NSArray<Optional, NSString> *thumbnail_small;
+@property (nonatomic, strong)NSNumber<Optional> *width;
 @end
 
 @interface BDJEssenceTag : JSONModel

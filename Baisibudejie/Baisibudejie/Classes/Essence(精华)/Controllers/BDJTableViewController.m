@@ -9,6 +9,9 @@
 #import "BDJTableViewController.h"
 #import "BDJEssenceModel.h"
 #import "EssenceVideoCell.h"
+#import "EssenceImageCell.h"
+#import "EssenceTextCell.h"
+#import "EssenceAudioCell.h"
 
 @interface BDJTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 //表格
@@ -67,7 +70,7 @@
     
     //http://s.budejie.com/topic/list/jingxuan/41/bs0315-iphone-4.3/0-20.json
     NSString *urlString = [NSString stringWithFormat:@"%@bs0315-iphone-4.3/%@-20.json", self.url, self.np];
-    
+    NSLog(@"%@", urlString);
     [BDJDownloader downloadWithURLString:urlString success:^(NSData *data) {
         NSError *error = nil;
         BDJEssenceModel *model = [[BDJEssenceModel alloc] initWithData:data error: &error];
@@ -119,6 +122,12 @@
     if ([detail.type isEqualToString:@"video"]) {
         //视频的cell
         cell = [EssenceVideoCell videoCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    }else if ([detail.type isEqualToString:@"image"]) {
+        cell = [EssenceImageCell imageCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    }else if ([detail.type isEqualToString:@"text"]) {
+        cell = [EssenceTextCell textCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    }else if ([detail.type isEqualToString:@"audio"]) {
+        cell = [EssenceAudioCell audioCellForTableView:tableView atIndexPath:indexPath withModel:detail];
     }else {
         cell = [[UITableViewCell alloc] init];
     }

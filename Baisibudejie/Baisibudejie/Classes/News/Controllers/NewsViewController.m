@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.rightImageName = @"review_post_nav_icon_20x18_";
+    self.rightHLImageName = @"review_post_nav_icon_click_20x18_";
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
